@@ -12,6 +12,16 @@ const Form = () => {
           <center>
             <h1>  Registration Form For Blood Donation </h1>
           </center>
+           <div className="fl">
+             <label>Student</label>
+             <input type="checkbox"  className="larger"/>
+             <label>Teaching</label>
+             <input type="checkbox" className="larger"/>
+             <label>Non-Teaching</label>
+             <input type="checkbox" className="larger" />
+             <label>Guest</label>
+             <input type="checkbox" className="larger" />
+        </div>
          <label> First Name:- </label>
           <input
             type="text"
