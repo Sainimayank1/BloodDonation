@@ -39,4 +39,27 @@ app.post('/donated', async(req, res) => {
   }
 })
 
+app.get('/TotalCount' , async(req,res) =>
+{
+  try {
+    const response  = await Donated.find().count();
+    if(response)
+      res.status(200).json({count:response});
+} catch (error) {
+  res.status(400).json({error:error});
+}
+})
+
+app.get('/TotalPeople' , async(req,res) =>
+{
+  try {
+    const response  = await Donated.find();
+    if(response)
+      res.status(200).json({people:response});
+} catch (error) {
+  res.status(400).json({error:error});
+}
+})
+
+
 app.listen(process.env.PORT, () => console.log("Server is running :" + process.env.PORT))
