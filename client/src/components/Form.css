@@ -56,6 +56,19 @@ label{
 h1{
     font-weight: 400;
 }
+.fl label{
+  margin: 2rem;
+  font-size: 25px;
+  font-weight: 400;
+}
+.larger{
+    height: 22px;
+    width: 22px;
+}
+.larger1{
+  height: 18px;
+  width: 18px;
+}
 @media screen and (max-width:667px) 
 {
     .container{
