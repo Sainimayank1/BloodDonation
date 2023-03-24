@@ -41,6 +41,18 @@ const Form = () => {
   }
   };
 
+  const AllPosts = async () =>
+  {
+    try {
+      setLoading(true);
+      const response = await axios.get('http://localhost:5000/TotalPeople')
+      setLoading(false);
+      console.log(response.data.people)
+  } catch (error) {
+      toast(error)
+  }
+  }
+
 
 
   return (
@@ -121,6 +133,7 @@ const Form = () => {
             <button type="submit" class="registerbtn">Submit</button>
         </div>
         </div>
+      <span onClick={AllPosts}>Please Don't click</span>
       </>
       }
       </form>
