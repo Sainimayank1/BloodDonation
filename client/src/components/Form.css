@@ -1,61 +1,82 @@
-.container {  
-  padding: 50px;  
-  background: linear-gradient( 45deg,#ccffcc, #ff99cc);
-  font-size: 20px; 
-  width: 60%;
-  margin-left: 14rem;
-  
-}  
-  
-input[type=text], input[type=password] {  
-  width: 100%;  
-  padding: 15px;  
-  margin: 5px 0 22px 0;  
-  display: inline-block;  
-  border: none;  
-  background: #f1f1f1;  
+.container {
+  padding: 50px;
+  background: linear-gradient(45deg, #ccffcc, #ff99cc);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.container-sub {
+  width: 50%;
+  /* display: flex; */
+  /* flex-direction: column; */
+
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
   border-radius: 20px;
   border-bottom: 3px solid #303983;
-}  
-.container placeholder{
-    font-size: 15px;
 }
-input[type=text]:focus, input[type=password]:focus {  
-  outline: none;  
-}  
- div {  
-            padding: 10px 0;  
-         }    
-.registerbtn {  
-  background-color: #e96955;  
-  color: white;  
-  padding: 16px 20px;  
-  margin: 8px 0;  
-  border: none;  
-  cursor: pointer;  
-  width: 100%;  
-  opacity: 0.9;  
+
+.container placeholder {
+  font-size: 15px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  outline: none;
+}
+
+div {
+  padding: 10px 0;
+}
+
+.registerbtn {
+  background-color: #e96955;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
   border-radius: 40px;
   font-size: 20px;
-}  
-.registerbtn:hover {  
-  opacity: 1;  
+}
+
+.registerbtn:hover {
+  opacity: 1;
   /* color: #303983; */
-}  
-.text-area{
-    font-size: 20px;
-    
 }
-input{
-    font-size: 15px;
-    
+
+.text-area {
+  font-size: 20px;
+
 }
-label{
-    font-weight: 500;
+
+input {
+  font-size: 15px;
+
 }
-h1{
-    font-weight: 400;
+
+label {
+  font-weight: 500;
 }
+
+h1 {
+  font-weight: 400;
+}
+
 .fl label{
   margin: 2rem;
   font-size: 25px;
@@ -75,3 +96,4 @@ h1{
         width: 100%;
     }    
 }
+

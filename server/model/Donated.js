@@ -17,10 +17,10 @@ const userSchema = new mongoose.Schema(
         gender:{
             type:String,
         },
-        hostler:{
+        blood:{
             type:String,
         },
-        blood:{
+        socicety:{
             type:String,
         },
         phone:{
