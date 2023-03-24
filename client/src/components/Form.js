@@ -6,15 +6,16 @@ import "./Form.css";
 const Form = () => {
   const [formValue,setvalue] = useState(
     {
+      is:"",
       name:"",
-      roolno:"",
+      rollno:"",
       branch:"",
       year:"",
       gender:"",
       blood:"",
-      socicety:"",
+      bloodbank:"",
       phone:"",
-      addres:""
+      address:""
   }
   )
 
@@ -67,14 +68,10 @@ const Form = () => {
             <h1>  Registration Form For Blood Donation </h1>
           </center>
            <div className="fl">
-             <label>Student</label>
-             <input type="checkbox"  className="larger"/>
-             <label>Teaching</label>
-             <input type="checkbox" className="larger"/>
-             <label>Non-Teaching</label>
-             <input type="checkbox" className="larger" />
-             <label>Guest</label>
-             <input type="checkbox" className="larger" />
+             <input type="radio" value="Student" onChange={handleChange} name="is" className="larger"/>Student   
+             <input type="radio" value="Non-Teaching" onChange={handleChange} name="is" className="larger"/> Non-Teaching   
+             <input type="radio"  value="Teaching" name="is" onChange={handleChange} className="larger" /> Teaching   
+             <input type="radio" value="Guest" name="is" onChange={handleChange} className="larger" /> Guest   
         </div>
          <label> First Name:- </label>
           <input
@@ -87,7 +84,7 @@ const Form = () => {
           <label> College-id/ Roll-no </label>
           <input
             type="text"
-            name="roolno"
+            name="rollno"
             placeholder="Enter id"
             size="15"
             onChange={handleChange}
@@ -112,7 +109,6 @@ const Form = () => {
             <label>Gender : </label>
             <input type="radio" value="Male" name="gender" onChange={handleChange}/> Male
             <input type="radio" value="Female" name="gender" onChange={handleChange}/> Female
-            <input type="radio" value="Other" name="gender" onChange={handleChange}/> Other
           </div>
           <label>Blood Group </label>
           <input
@@ -122,10 +118,10 @@ const Form = () => {
             size="15"
             onChange={handleChange}
           /> 
-           <label>(PGI/RED CROSS) </label>
+           <label>Blood Bank(PGI/RED CROSS) </label>
           <input
             type="text"
-            name="socicety"
+            name="bloodbank"
             placeholder="Enter PGI/ RED Cross"
             size="15"
             onChange={handleChange}
@@ -138,8 +134,8 @@ const Form = () => {
             size="15"
             onChange={handleChange}
           /> 
-          <label>Current Address:-</label>
-          <textarea name="addres" rows="10" cols='70'  className='text-area' onChange={handleChange}/>
+          <label>Current Address(Guest Only)</label>
+          <textarea name="address" rows="10" cols='70'  className='text-area' onChange={handleChange}/>
             <button type="submit" class="registerbtn">Submit</button>
         </div>
         </div>

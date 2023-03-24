@@ -77,6 +77,10 @@ h1 {
   font-weight: 400;
 }
 
+.fl{
+  margin-bottom: 1rem;
+}
+
 .fl label{
   margin: 2rem;
   font-size: 25px;
@@ -85,6 +89,7 @@ h1 {
 .larger{
     height: 22px;
     width: 22px;
+    margin: 0 0 0 3rem;
 }
 .larger1{
   height: 18px;
