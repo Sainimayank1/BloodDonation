@@ -2,10 +2,13 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
     {
+        is:{
+            type:String
+        },
         name:{
             type:String,
         },
-        roolno:{
+        rollno:{
             type:String,
         },
         branch:{
@@ -20,19 +23,19 @@ const userSchema = new mongoose.Schema(
         blood:{
             type:String,
         },
-        socicety:{
+        bloodbank:{
             type:String,
         },
         phone:{
             type:String,
         },
-        addres:{
+        address:{
             type:String,
         }
-    }, {timestamps:true}
+    }
 )
 
 
- const schema = mongoose.model("Donated",userSchema);
+ const schema = mongoose.model("BloodDonation",userSchema);
 
  export default schema;
