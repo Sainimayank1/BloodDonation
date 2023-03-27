@@ -13,7 +13,7 @@ const Form = () => {
       year:"",
       gender:"",
       blood:"",
-      bloodbank:"",
+      bloodbank:"PGI",
       phone:"",
       address:""
   }
@@ -118,14 +118,12 @@ const Form = () => {
             size="15"
             onChange={handleChange}
           /> 
-           <label>Blood Bank(PGI/RED CROSS) </label>
-          <input
-            type="text"
-            name="bloodbank"
-            placeholder="Enter PGI/ RED Cross"
-            size="15"
-            onChange={handleChange}
-          /> 
+           <label >Blood Bank: </label>
+          <select name="bloodbank" className="select" onChange={handleChange}>
+            <option className="option" value="PGI">PGI</option>
+            <option className="option" value="RED-CROSS">RED-CROSS</option>
+          </select>
+          <br></br>
           <label>Phone No</label>
           <input
             type="text"
@@ -139,7 +137,7 @@ const Form = () => {
             <button type="submit" class="registerbtn">Submit</button>
         </div>
         </div>
-      <span onClick={AllPosts}>Please Don't click</span>
+      {/* <span onClick={AllPosts}>Please Don't click</span> */}
       </>
       }
       </form>

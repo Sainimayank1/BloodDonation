@@ -16,6 +16,19 @@
 
 }
 
+.select{
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.option{
+  padding: 3rem !important;
+  font-size: 15px;
+  border: none;
+  border-bottom: black;
+}
+
+
 input[type=text],
 input[type=password] {
   width: 100%;
